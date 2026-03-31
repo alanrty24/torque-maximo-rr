@@ -39,8 +39,8 @@ export async function POST(request: Request) {
 
   const payload = parsedPayload.data;
 
-  const emailUser = process.env['ENV-EMAIL'];
-  const emailPassword = process.env['ENV-PASSWORD'];
+  const emailUser = process.env['ENV_EMAIL'];
+  const emailPassword = process.env['ENV_PASSWORD'];
 
   if (!emailUser || !emailPassword) {
     return NextResponse.json(
