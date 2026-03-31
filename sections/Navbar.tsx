@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [active, setActive] = useState<string>("#home");
+  const [active, setActive] = useState<string>("#inicio");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {

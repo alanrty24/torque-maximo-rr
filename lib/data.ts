@@ -1,8 +1,9 @@
 export const NAV_LINKS = [
-  { label: 'Inicio', href: '/' },
-  { label: 'Servicios', href: '/#servicios' },
-  { label: 'Diagnósticos', href: '/#diagnosticos' },
-  { label: 'Sobre Nosotros', href: '/#sobre-nosotros' },
+  { label: 'Inicio', href: '#inicio' },
+  { label: 'Servicios', href: '#servicios' },
+  { label: 'Clientes', href: '#recommendations' },
+  { label: 'Diagnósticos', href: '#diagnosticos' },
+  { label: 'Contacto', href: '#contact' },
 ];
 
 export const HERO = {
@@ -13,7 +14,7 @@ export const HERO = {
     'Potencia absoluta y precisión milimétrica. Soluciones integrales para vehículos pesados y maquinaria industrial con tecnología de vanguardia.',
   ctas: [
     { label: 'RESERVAR DIAGNÓSTICO', href: '#contact', variant: 'primary' },
-    { label: 'VER SERVICIOS', href: '#services', variant: 'outline' },
+    { label: 'VER SERVICIOS', href: '#servicios', variant: 'outline' },
   ],
   image: '/images/hero-image.png',
 };
@@ -153,3 +154,20 @@ export const FOOTER = {
     { id: 'f3', label: 'Lun - Vie: 08:00 - 18:00', icon: FaClock, href: 'https://www.google.com/search?q=horario+de+atencion+Caracas+Venezuela' },
   ],
 };
+
+export const CONTACT = {
+  eyebrow: 'CONTACTO DIRECTO',
+  titleTop: 'CONTÁCTANOS PARA',
+  titleHighlight: 'UNA ASESORÍA',
+  description:
+    'Nuestros expertos están listos para optimizar el rendimiento de tu flota comercial e industrial.',
+  location: 'Caracas, Venezuela',
+  submitLabel: 'ENVIAR CONSULTA',
+  successMessage: 'Recibimos tu consulta. Te responderemos a la brevedad.',
+  errorMessage: 'No pudimos enviar la consulta. Intenta nuevamente en unos minutos.',
+};
+
+export const CONTACT_SERVICE_OPTIONS = [
+  'Asesoría general',
+  ...SERVICES.map((service) => service.title),
+];
